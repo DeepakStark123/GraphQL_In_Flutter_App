@@ -1,0 +1,27 @@
+type Query {
+  test: String
+  students: [Student]       # Query for only students
+  colleges: [College]       # Query for only colleges
+  studentsAndColleges: StudentsAndColleges # Combined query for both
+}
+
+type Student {
+  id: ID
+  firstName: String
+  lastName: String
+  email: String
+  collegeId: String
+  college: College
+}
+
+type College {
+  id: ID
+  name: String
+  location: String
+  rating: Float
+}
+
+type StudentsAndColleges {
+  students: [Student]
+  colleges: [College]
+}

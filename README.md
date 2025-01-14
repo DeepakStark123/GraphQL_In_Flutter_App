@@ -120,4 +120,3 @@ The frontend is a Flutter app that consumes the backend GraphQL API.
 ---
 
 With this guide, you can run both the backend and frontend of the GraphQL app. Happy coding!
-# GraphQLApp
